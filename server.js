@@ -36,7 +36,7 @@ app.use("/api/v1/user", userRouter);
 app.use("/api/v1/transaction", userAuth, transactionRouter);
 
 app.use("/", (req, res) => {
-  res.sendFile(path.join(__dirname, "/build/index.html"));
+  res.sendFile(path.join(__dirname, "/build/index.js"));
 });
 // catch the bad url
 app.use("*", (req, res, next) => {
