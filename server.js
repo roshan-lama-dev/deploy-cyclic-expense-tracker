@@ -11,7 +11,7 @@ import { userAuth } from "./src/middleware/authMiddleware.js";
 import path from "path";
 
 const app = express();
-const PORT = process.env.PORT || 8000;
+const PORT = process.env.PORT || 3000;
 // console.log(process.env.MONGO_CLIENT);
 const __dirname = path.resolve();
 // console.log("form the path", __dirname);
