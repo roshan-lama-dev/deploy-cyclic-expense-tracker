@@ -3,6 +3,9 @@ import UserSchema from "./UserSchema.js";
 // query to create a new user
 export const createUser = (newUserObj) => {
   return UserSchema(newUserObj).save();
+
+  // UserSchema(newUserObj) which we will recieve in req.body
+  
 };
 
 // get the user from the database

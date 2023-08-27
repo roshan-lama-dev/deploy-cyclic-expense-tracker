@@ -10,7 +10,7 @@ export const userAuth = async (req, res, next) => {
     }
     res.json({
       status: "Error",
-      message: "Unathorixed",
+      message: "Unathorised",
     });
   } catch (error) {
     next(error);

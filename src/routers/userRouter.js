@@ -14,7 +14,7 @@ router.post("/", async (req, res, next) => {
           status: "success",
           message: "The new user has been created",
           result,
-        })
+        })  
       : res.json({
           status: "error",
           message: "cannot create a new user",
